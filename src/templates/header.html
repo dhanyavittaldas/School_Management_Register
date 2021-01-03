@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+
+{% block title %} School App
+
+{% endblock %}
+
+{% block body %}
+
+
+
+
+<nav class="navbar bg-nav">
+    <a href="" class="navbar-brand">School App</a>
+    <a href="{{ url_for('Logout') }}" class="navbar-brand">Logout</a>
+</nav>
+
+<br>
+<div class="menu1">
+    <a href="{{ url_for('Index') }}" class="navbar-brand">Home</a>
+    <a href="{{ url_for('StudentW') }}" class="navbar-brand">Student</a>
+    <a href="{{ url_for('TeacherW') }}" class="navbar-brand">Teacher</a>
+    <a href="{{ url_for('ClassW') }}" class="navbar-brand">Class</a>
+</div>
+
+{% endblock %}
